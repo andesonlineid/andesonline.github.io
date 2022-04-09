@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+/* Header style */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+header .left-content h1 {
+    font-family: 'Lobster Two', cursive;
+}
+
+nav {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+   color: white;
+}
+
+/* Last Header Style */
+
+/* Main Content Style */
+
+main {
+  
+    margin: 0 auto;
+}
+
+
+
+/* About Style */
+#about {
+    display: flex;
+    flex-direction: row-reverse;
+  
+   
+}
+#about .left-content {
+    flex-basis: 50%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 20px;
+}
+#about .right-content {
+    flex-basis: 50%;
+}
+
+#about .left-content {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    flex-basis: 50%;
+    justify-content: center;
+  
+}
+
+#about .left-content ul {
+    display: flex;
+    margin-top: 10px;
+}
+#about .left-content ul li {
+    list-style-type: none;
+    margin-right: 8px;
+}
+
+#about .left-content ul img {
+    width: 64px;
+}
+
+#about .left-content ul li a {
+    text-decoration: none;
+}
+
+#about .right-content .image-content {
+    overflow: hidden;
+}
+
+#about .right-content .image-content .img-profile {
+    cursor: pointer;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-height: 100vh;
+   
+}
+
+
+
+/* Last About Style */
+
+
+/* Last Main content style */
+
+
+@media screen and (max-width: 1024px) {
+#about {
+    flex-direction: column-reverse;
+}
+#about .left-content {
+    align-items: center;
+    text-align: center;
+    padding-left: 0;
+    font-size: 1rem;
+    padding: 5px;
+}
+#about .left-content ul img {
+    width: 32px;
+}
+}
