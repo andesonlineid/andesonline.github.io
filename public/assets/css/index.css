@@ -1,0 +1,119 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(46, 46, 46);
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+  
+}
+
+
+ a {
+    text-decoration: none;
+    color: white;
+}
+
+main #content {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: fixed;
+    top: 5%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+main #content .introduction,.social-media-introduction {
+    display: flex;
+    padding: 15px;
+    margin-top: 15px;
+    
+}
+
+
+main #content .introduction .introduction-content {
+    flex-basis: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 1s ease-in-out;
+}
+img:hover {
+    transform: scale(1.2);
+    transition: all 1s ease-in-out;
+  
+}
+
+
+main #content .introduction .introduction-content figure {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+main #content .introduction .introduction-content figure .img-introduction {
+    max-width: 100%;
+}
+
+main #content .social-media-introduction {
+    justify-content: center;
+    align-items: center
+}
+
+main #content .social-media-introduction .center-content  {
+    text-align: center;
+    flex-basis: 100%;
+}
+main #content .social-media-introduction .center-content h1 {
+    font-size: 2em;
+}
+
+main #content .social-media-introduction .center-content p {
+    margin-top: 15px;
+    font-size: 1.3em;
+}
+
+main #content .social-media-introduction .center-content .social-media-icon {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+main #content .social-media-introduction .center-content .social-media-icon figure {
+    overflow: hidden;
+}
+
+ main #content .social-media-introduction .center-content .social-media-icon img {
+    width: 100px;
+    margin-right: 15px;
+ }
+
+
+/* Responsive breakpoints */
+
+@media screen and (max-width: 650px) {
+    main #content {
+        top: 10%;
+    }
+}
